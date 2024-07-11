@@ -101,7 +101,7 @@ body > .content {
 }
 
 /* Center the image below the section */
-img[src="assets/images/new-exotic-bird.jpg"] {
+img[src$="assets/images/new-exotic-bird.jpg"] { /* the $= selector targets the image with the specified source */
     display: block;
     margin: 20px auto; /* Adds space above the image and centers it horizontally */
     border-radius: 50%; /* Rounds the corners of the image */
