@@ -1,20 +1,14 @@
-/* INSTRUCTIONS: 
-
-Style the website you made last week using CSS with the following requirements:
-
-    Use only external CSS file (no internal or inline styling)
-    Every element must be styled.
-    Create style rules using class, id, and element selectors.
-
-*/
-
-/* CSS for the body */
-
-
 /* General body styling */
-body {
-    margin: 0;
+
+
+html, body {
+    height: 100%; /* Ensures the minimum height of the entire document is at least the viewport height */
+    margin: 0; /* Removes default margin */
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body > .content {
+    flex: 1; /* Allows the content to expand and push the footer down */
 }
 
 /* Header styling */
@@ -26,9 +20,22 @@ body {
     background-color: #f3f3f3;
 }
 
+.h1Text {
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+}
+
 /* Navigation styling */
 .navMain {
-    margin: 0;
+    margin: 0; /* Removes default margin */
+}
+
+.navMain a:hover {
+    color: #959595; /* Changes the color of the text when hovered */
+}
+
+.navMain a:active {
+    color: #060606; /* Changes the color of the text when clicked */
 }
 
 .navUlMain {
@@ -39,7 +46,7 @@ body {
 }
 
 .navUlMain li {
-    margin-left: 20px;
+    margin-left: 20px; /* Adds space between each list item */
 }
 
 .navUlMain li a {
@@ -51,7 +58,7 @@ body {
 }
 
 .navMain li a i {
-    font-size: 20px;
+    font-size: 20px; /* Adjust the size of the icon based on preference */
 }
 
 /* Ensures the image fits within the header if needed */
@@ -63,18 +70,41 @@ body {
 
 
 
+/* Main Section Styling */
+
+.sectMain {
+    display: flex; /* Allows the section to be displayed as a flex container */
+    flex-direction: column; /* Stacks the h2 and div (containing paragraphs) vertically */
+    align-items: center; /* Centers the items horizontally */
+    text-align: center; /* Ensures the text within the section is centered */
+    margin: 20px auto; /* Centers the section itself */
+    max-width: 800px; /* Adjust this value based on your design preference */
+}
+
+.sectH2Main {
+    margin-bottom: 20px; /* Adds some space below the h2 element */
+}
+
+.sectDivMain > p {
+    margin-bottom: 20px; /* Adds some space between paragraphs */
+}
+
+/* Center the image below the section */
+img[src="assets/images/new-exotic-bird.jpg"] {
+    display: block;
+    margin: 20px auto; /* Adds space above the image and centers it horizontally */
+}
 
 
+/* Footer Styling */
 
-
-
-
-
-
-/* .standard-modules .rich-text a:hover {
-    color: #999999;
-    text-decoration: underline;
-    text-transform: none; }
-    
-
-    Above code taken from an online website. Maybe modify it to have a hover effect on my page? */
+.footerMain {
+    background-color: #333;
+    color: #fff;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex: auto;
+}
