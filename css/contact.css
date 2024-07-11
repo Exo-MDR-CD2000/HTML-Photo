@@ -1,0 +1,38 @@
+.contactMain {
+    display: flex; /* Allows the section to be displayed as a flex container */
+    flex-direction: column; /* Stacks the h2 and div (containing paragraphs) vertically */
+    align-items: center; /* Centers the items horizontally */
+    text-align: center; /* Ensures the text within the section is centered */
+    margin: 20px auto; /* Centers the section itself */
+    max-width: 800px; /* Adjust this value based on your design preference */
+    padding: 20px;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+
+.footerMain {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Below could be useful for @media query */
+
+/* .footerMain {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    padding: 20px;
+    border: 10px solid black;
+
+} 
+*/

@@ -113,7 +113,7 @@ img[src="assets/images/new-exotic-bird.jpg"] {
 
 /* Footer Styling */
 
-.footerMain {
+/* .footerMain {
     background-color: #333;
     color: #fff;
     display: flex;
@@ -121,4 +121,15 @@ img[src="assets/images/new-exotic-bird.jpg"] {
     align-items: center;
     padding: 20px;
     flex: auto;
+} */
+
+.footerMain {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }

@@ -1,71 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Site</title>
+    <title>Photography J.A.G</title>
+
+    <!-- Linked CSS files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- IBM Plex Font Below -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lora Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Fab Icon Pack -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
+
 <body>
 
-<header>
-    <h1>Contact Form</h1>
-</header>
-  
-<!-- Nav element is used for navigating between HTML pages. This has been copied and pasted in all other pages. -->
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <header class="headerMain">
+        <h1 class="h1Text">J.A.G</h1>
 
-<!-- The form element below defines the textareas that the user can enter. NOTE: This form is for demonstration purposes only and does not actually send any data to a back end. -->
- <!-- Information is stored in local storage using the script element below -->
-<form action="submit_form.php" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-    <br>
-    <input type="submit" value="Send">
-</form>
 
-<!-- Add js functionality to save form information to browser local storage -->
- <!-- An event listener was created using the script element to write JS code inside HTML -->
-  <!-- We use the DOMContentLoaded event listener to target the form element on this HTML page.  -->
-   <!-- Event listener does not overwrite existing data. -->
+        <!-- Nav element is used for navigating between HTML pages. This has been copied and pasted in all other pages. -->
+        <nav class="navMain">
+            <ul class="navUlMain">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const form = document.querySelector('form');
-        form.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent the default form submission
-    
-            // Get form data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-    
-            // Retrieve existing data or initialize an empty array
-            let formDataArray = JSON.parse(localStorage.getItem('contactFormData')) || [];
-    
-            // Append new data
-            formDataArray.push({name: name, email: email, message: message});
-    
-            // Save updated array to local storage
-            localStorage.setItem('contactFormData', JSON.stringify(formDataArray));
-    
-            // Optionally, alert the user that the data was saved
-            alert('Your contact information has been saved in local storage.');
+                <!-- Icon links for linkedin & github -->
+                <li><a href="https://www.linkedin.com/in/jag1997" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://github.com/Exo-MDR-CD2000" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- The form element below defines the textareas that the user can enter. NOTE: This form is for demonstration purposes only and does not actually send any data to a back end. -->
+    <!-- Information is stored in local storage using the script element below -->
+    <div class="contactMain">
+        <h2 class="contactHead">Contact Me</h2>
+        <p>Feel free to reach out to me with any questions or comments. I will get back to you as soon as possible.</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <!-- Add js functionality to save form information to browser local storage -->
+    <!-- An event listener was created using the script element to write JS code inside HTML -->
+    <!-- We use the DOMContentLoaded event listener to target the form element on this HTML page.  -->
+    <!-- Event listener does not overwrite existing data. -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent the default form submission
+
+                // Get form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Retrieve existing data or initialize an empty array
+                let formDataArray = JSON.parse(localStorage.getItem('contactFormData')) || [];
+
+                // Append new data
+                formDataArray.push({ name: name, email: email, message: message });
+
+                // Save updated array to local storage
+                localStorage.setItem('contactFormData', JSON.stringify(formDataArray));
+
+                // Optionally, alert the user that the data was saved
+                alert('Your contact information has been saved in local storage.');
+            });
         });
-    });
     </script>
- 
+
+    <footer class="footerMain">
+        <p> &copy; 2024 J.A.G Portfolio </p>
+    </footer>
+
 </body>
+
 </html>
