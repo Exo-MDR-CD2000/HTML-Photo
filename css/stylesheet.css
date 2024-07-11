@@ -8,6 +8,10 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #f3f3f300; /* Adds a light gray background color */
+}
+
 body > .content {
     flex: 1; /* Allows the content to expand and push the footer down */
 }
