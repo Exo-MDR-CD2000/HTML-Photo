@@ -1,5 +1,6 @@
-/* General body styling */
+/* ------------------------------------------------------------------ */
 
+/* General body styling */
 
 html, body {
     height: 100%; /* Ensures the minimum height of the entire document is at least the viewport height */
@@ -11,7 +12,10 @@ body > .content {
     flex: 1; /* Allows the content to expand and push the footer down */
 }
 
+/* ------------------------------------------------------------------- */
+
 /* Header styling */
+
 .headerMain {
     display: flex;
     justify-content: space-between;
@@ -25,7 +29,10 @@ body > .content {
     font-style: italic; /* Makes the text italic */
 }
 
+/* ---------------------------------------------------------------------------  */
+
 /* Navigation styling */
+
 .navMain {
     margin: 0; /* Removes default margin */
 }
@@ -67,7 +74,7 @@ body > .content {
     height: auto;
 }
 
-
+/* -------------------------------------------------------------------------------------------------------- */
 
 
 /* Main Section Styling */
@@ -95,13 +102,13 @@ img[src="assets/images/new-exotic-bird.jpg"] {
     margin: 20px auto; /* Adds space above the image and centers it horizontally */
 }
 
+/* ----------------------------------------------------------------------------------------- */
 
 /* Footer Styling */
 
 .footerMain {
     background-color: #333;
     color: #fff;
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
