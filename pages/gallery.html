@@ -26,7 +26,6 @@
 
     <!-- Fab Icon Pack -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 </head>
 
 <body>
@@ -62,8 +61,7 @@
 
     <div class="photo-gallery">
         <div class="photo-item">
-            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground"
-                onclick="openPhotoViewer(this)">
+            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground">
             <div class="photo-info">
                 <p>Small Green Bridge</p>
                 <p>Oxnard, California</p>
@@ -72,8 +70,7 @@
         </div>
         <!-- Add more photo items here -->
         <div class="photo-item">
-            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground"
-                onclick="openPhotoViewer(this)">
+            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground">
             <div class="photo-info">
                 <p>Small Green Bridge</p>
                 <p>Oxnard, California</p>
@@ -81,8 +78,7 @@
             </div>
         </div>
         <div class="photo-item">
-            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground"
-                onclick="openPhotoViewer(this)">
+            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground">
             <div class="photo-info">
                 <p>Small Green Bridge</p>
                 <p>Oxnard, California</p>
@@ -90,8 +86,7 @@
             </div>
         </div>
         <div class="photo-item">
-            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground"
-                onclick="openPhotoViewer(this)">
+            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground">
             <div class="photo-info">
                 <p>Small Green Bridge</p>
                 <p>Oxnard, California</p>
@@ -99,8 +94,7 @@
             </div>
         </div>
         <div class="photo-item">
-            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground"
-                onclick="openPhotoViewer(this)">
+            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground">
             <div class="photo-info">
                 <p>Small Green Bridge</p>
                 <p>Oxnard, California</p>
@@ -108,8 +102,7 @@
             </div>
         </div>
         <div class="photo-item">
-            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground"
-                onclick="openPhotoViewer(this)">
+            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground">
             <div class="photo-info">
                 <p>Small Green Bridge</p>
                 <p>Oxnard, California</p>
@@ -117,8 +110,7 @@
             </div>
         </div>
         <div class="photo-item">
-            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground"
-                onclick="openPhotoViewer(this)">
+            <img src="../assets/images/DSC00525.JPG" alt="A small green bridge on a kid's playground">
             <div class="photo-info">
                 <p>Small Green Bridge</p>
                 <p>Oxnard, California</p>
@@ -126,6 +118,18 @@
             </div>
         </div>
     </div>
+
+    <div id="photoViewerModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <!-- <div id="photo-viewer" class="photo-viewer">
+        <span class="close" onclick="closePhotoViewer()">&times;</span>
+        <img class="viewer-content" id="viewer-img">
+        <div id="viewer-caption" class="viewer-caption"></div>
+    </div> -->
 
     <!-- Refer to information chatGPT about how to go about using flex grid for three rows of photos. Using table elements might not be the best choice to display these photos. -->
     <!-- <table>
@@ -205,6 +209,8 @@
         <p> &copy; 2024 J.A.G Portfolio </p>
     </footer>
 
+
+    <script src="../js/script.js"></script>
 
 </body>
 
