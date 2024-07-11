@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Site</title>
-</head>
-<body>
-
-   <!-- 2. **Gallery Page**:
-   - **Header**: `<h1>` title saying "Gallery".
-   - **Images**: A grid or list of 3 images showcasing photography work.
-   - **Table**: A table with image titles, locations, and dates.
- -->
-<header>
-    <h1>Photo Gallery</h1>
-</header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery | J.A.G</title>
     
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+        <!-- Linked CSS files -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/gallery.css">
+    
+        <!-- IBM Plex Font Below -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+        <!-- Lora Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+         
+        <!-- Fab Icon Pack -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    </head>
+    
+    <body>
+    
+        <!-- This header tells the user that the site is a portfolio site -->
+        <header class="headerMain">
+            <h1 class="h1Text">J.A.G</h1>
+    
+    
+            <!-- Nav element is used for navigating between HTML pages. This has been copied and pasted in all other pages. -->
+            <nav class="navMain">
+                <ul class="navUlMain">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                    <!-- Icon links for linkedin & github -->
+                    <li><a href="https://www.linkedin.com/in/jag1997" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Exo-MDR-CD2000" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </header>
 
 <!-- The table element below displays my photos with the title, location, date, and photo itself. -->
 <h2>Open the photos in a seperate tab for higher quality</h2>
@@ -99,6 +121,11 @@
         </tr>
     </tbody>
 </table>
+
+<footer class="footerGallery">
+    <p> &copy; 2024 J.A.G Portfolio </p>
+</footer>
+
 
 </body>
 </html>
