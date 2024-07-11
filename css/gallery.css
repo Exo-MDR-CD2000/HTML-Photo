@@ -80,6 +80,16 @@
     max-width: 700px;
 }
 
+#caption {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+
+/* Next issue is to fix the captions not showing up for portrait photos when clicking on one */
+
 .close {
     position: absolute;
     top: 15px;
