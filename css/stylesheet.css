@@ -100,6 +100,9 @@ body > .content {
 img[src="assets/images/new-exotic-bird.jpg"] {
     display: block;
     margin: 20px auto; /* Adds space above the image and centers it horizontally */
+    border-radius: 50%; /* Rounds the corners of the image */
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4); /* Adds a subtle shadow effect */
+    border: 3px solid black; /* Adds a dark black outline */
 }
 
 /* ----------------------------------------------------------------------------------------- */
