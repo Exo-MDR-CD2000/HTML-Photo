@@ -1,4 +1,4 @@
-.footerGallery {
+/* .footerGallery {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -6,4 +6,15 @@
     text-align: center;
     padding: 20px;
     border: 10px solid black;
+} */
+
+.footerGallery {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
