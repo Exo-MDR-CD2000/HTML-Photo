@@ -50,10 +50,10 @@ body > .content {
 }
 
 .navUlMain {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* Removes the default list item markers (bullets, numbers) */
+    display: flex; /* Displays the list items in a row (flexibly) */
+    padding: 0; /* Removes default padding around the list */
+    margin: 0; /* Removes default margin around the list */
 }
 
 .navUlMain li {
@@ -61,11 +61,11 @@ body > .content {
 }
 
 .navUlMain li a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-decoration: none; /* Removes the underline from links */
+    color: #333; /* Sets the text color of the links to a dark gray */
+    display: flex; /* Enables flexbox layout, making it easier to align text vertically and horizontally */
+    align-items: center; /* Vertically centers the link text within its container */
+    justify-content: center; /* Horizontally centers the link text within its container */
 }
 
 .navMain li a i {
@@ -113,6 +113,22 @@ img[src$="assets/images/new-exotic-bird.jpg"] { /* the $= selector targets the i
 
 /* Footer Styling */
 
+.footerMain {
+    background-color: #333;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    /* width: 100%; */
+    /* margin: 0; */
+    /* position: relative; */
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Unused */
+
 /* .footerMain {
     background-color: #333;
     color: #fff;
@@ -122,14 +138,3 @@ img[src$="assets/images/new-exotic-bird.jpg"] { /* the $= selector targets the i
     padding: 20px;
     flex: auto;
 } */
-
-.footerMain {
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-}

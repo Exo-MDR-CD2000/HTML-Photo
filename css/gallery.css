@@ -1,30 +1,30 @@
 .galleryH2 {
-    text-align: center;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    text-align: center; /* Center the text */
+    margin: 0.5rem; /* Add some space around the heading */
+    padding: 0.5rem; /* Add padding to the heading */
     /* font-size: 2.5em; */
     color: #333;
 }
 
 .photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 1rem; /* Add some space between the images */
     max-width: 1200px; /* Set a max-width for the gallery */
     margin: 0 auto; /* Center the gallery horizontally */
     margin-bottom: 1rem; /* Add some space at the bottom */
     padding: 10px; /* Add padding to ensure it doesn't touch the screen edges */
 }
 .photo-item {
-    position: relative;
+    position: relative; /* Enable absolute positioning for the overlay */
     width: 90%; /* Adjust width as needed */
-    margin: auto;
-    overflow: hidden;
+    margin: auto; /* Center the image */
+    overflow: hidden; /* Hide any overflowing content */
 }
 
 .photo-item::before {
-    content: "";
-    display: block;
+    content: ""; /* Required for pseudo-elements */
+    display: block; /* Ensures the pseudo-element is a block-level element */
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
 
@@ -100,43 +100,7 @@
     cursor: pointer;
 }
 
-/* .photo-viewer {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.photo-viewer .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.photo-viewer .viewer-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.photo-viewer .viewer-caption {
-    text-align: center;
-    color: white;
-    padding: 10px 20px;
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-} */
+/* ------------------------------------------------------------------------------------------------------- */
 
 /* Media query for tablets */
 @media (max-width: 768px) {

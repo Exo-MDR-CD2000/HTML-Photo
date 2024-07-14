@@ -5,14 +5,14 @@
     text-align: center; /* Ensures the text within the section is centered */
     margin: 20px auto; /* Centers the section itself */
     max-width: 800px; /* Adjust this value based on your design preference */
-    padding: 20px;
-    border: 10px solid black;
-    border-radius: 20px;
+    padding: 20px; /* Adds space around the section */
+    border: 10px solid black; /* Adds a border around the section */
+    border-radius: 20px; /* Rounds the corners of the section */
 }
 
 
 .footerMain {
-    position: fixed;
+    position: fixed; /* Ensures the footer stays at the bottom of the page */
     left: 0;
     bottom: 0;
     width: 100%;
